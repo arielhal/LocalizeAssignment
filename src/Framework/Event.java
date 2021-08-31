@@ -30,6 +30,7 @@ public abstract class Event {
         return this.getClass().getName();
     }
     
+    # PROBLEM: equals may not be the best methods, probablue "sameType(Event)" wold be better
     /**
      * Two events are equal if they are of the same type.
      * 
@@ -43,6 +44,7 @@ public abstract class Event {
         return getClass() == obj.getClass();
     }
 
+    # PROBLEM: the IDE auto-generated this stupid function
     @Override
     public int hashCode() {
         int hash = 3;
