@@ -6,6 +6,7 @@ package Framework;
  * @author leagi
  */
 public abstract class Event {
+    // Should have created another not static variable that will save the ID (I understood and fixed it myslef during the interview)
     private static int id = 0;      // A unique ID for each event
     
     /**
